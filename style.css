@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    background: #0a0a0f;
+    color: #e6e6e6;
+    font-family: 'Orbitron', sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: radial-gradient(circle at top, #1a1a25, #050509);
+    border-bottom: 1px solid #222;
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    color: #6df0ff;
+    text-shadow: 0 0 10px #00eaff;
+}
+
+.tag {
+    color: #bbb;
+    margin-top: 8px;
+}
+
+.search-section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#searchBar {
+    width: 70%;
+    max-width: 450px;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #11131b;
+    color: #fff;
+    font-size: 1rem;
+    outline: 1px solid #00eaff;
+    transition: 0.3s;
+}
+
+#searchBar:focus {
+    box-shadow: 0 0 10px #00eaff;
+}
+
+.list-section {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #9af7ff;
+}
+
+.list-box {
+    background: #0f121b;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.participant {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 18px;
+    background: #131722;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.participant:hover {
+    background: #1b2233;
+    transform: translateX(5px);
+}
+
+.download-btn {
+    padding: 6px 12px;
+    background: #00eaff;
+    border: none;
+    border-radius: 6px;
+    color: #000;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background: #6df0ff;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    border-top: 1px solid #222;
+}
