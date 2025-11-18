@@ -1,0 +1,70 @@
+:root{
+  --bg: #06121a;
+  --card: rgba(255,255,255,0.03);
+  --accent: #22c1a0;
+  --muted: #9db3bd;
+  --glass: rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Montserrat,system-ui,-apple-system,'Segoe UI',Roboto,Arial;color:#eaf6f3;background:
+linear-gradient(180deg,#031018 0%,#061326 100%);-webkit-font-smoothing:antialiased}
+.page{max-width:1100px;margin:28px auto;padding:18px}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,#0ff,#20c997);display:flex;align-items:center;justify-content:center;color:#022;font-weight:800}
+.brand-text h1{margin:0;font-size:18px}
+.tag{margin:0;color:var(--muted);font-size:13px}
+.actions{display:flex;gap:8px;align-items:center}
+.upload-btn{display:inline-block;background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--accent);padding:8px 12px;border-radius:8px;cursor:pointer;font-weight:700}
+.upload-btn input{display:none}
+.btn{padding:8px 12px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted);cursor:pointer}
+.btn.primary{background:var(--accent);color:#042;border:0}
+.hero{display:flex;gap:16px;margin-bottom:18px}
+.hero-left{flex:1}
+.hero-right{width:280px;display:flex;flex-direction:column;gap:12px}
+.lead{color:var(--muted);margin-top:8px}
+.controls-row{display:flex;gap:8px;margin-top:12px}
+.controls-row input{flex:1;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit}
+.card{background:var(--card);padding:16px;border-radius:12px;backdrop-filter: blur(6px)}
+.stat{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px}
+.stat-number{font-size:28px;font-weight:800;color:var(--accent)}
+.stat-label{color:var(--muted);font-size:13px}
+.preview{padding:12px}
+.preview-title{color:var(--muted);font-size:13px;margin-bottom:8px}
+.mini-cert{border-radius:8px;padding:12px;background:linear-gradient(180deg,#fff 0%,#f3f7fb 100%);color:#072a32}
+.m-logo{width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,#0ff,#20c997);display:inline-flex;align-items:center;justify-content:center;font-weight:800;color:#022}
+.m-title{font-weight:800;margin-top:6px}
+.m-name{font-weight:700;margin-top:6px;color:#05333f}
+.list-wrap{margin-bottom:18px}
+.list-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.list{display:flex;flex-direction:column;gap:8px;max-height:420px;overflow:auto;padding-right:6px}
+.row{display:grid;grid-template-columns:1fr 210px;align-items:center;padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.02);background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent)}
+.name{font-weight:700}
+.controls{display:flex;gap:8px;justify-content:flex-end}
+.smallbtn{padding:8px 10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--muted);cursor:pointer}
+.smallbtn.primary{background:var(--accent);color:#042;border:0}
+.footer{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:12px}
+.muted{color:var(--muted);font-size:13px}
+
+/* certificate template (offscreen) */
+.certTemplate{position:fixed;left:-9999px;top:-9999px;pointer-events:none}
+.certPaper{width:1200px;height:850px;padding:40px;box-sizing:border-box;background:linear-gradient(180deg,#ffffff 0%,#f3f7fb 100%);border-radius:8px}
+.certInner{height:100%;border:12px solid #06232d;padding:28px;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.wm{position:absolute;right:40px;top:40px;opacity:0.06;font-weight:800;font-size:84px;transform:rotate(-18deg);color:#06232d}
+.certHead{display:flex;align-items:center;gap:18px}
+.certLogo{width:86px;height:86px;border-radius:14px;background:linear-gradient(135deg,#0ff,#20c997);display:flex;align-items:center;justify-content:center;font-weight:800;color:#042}
+.certTitle{font-weight:900;font-size:28px;color:#06232d}
+.certBody{margin-top:24px;text-align:center}
+.certSub{color:#1f3a4a}
+.certName{font-size:46px;font-weight:900;color:#06232d;margin-top:12px}
+.certMeta{color:#1f3a4a;margin-top:8px}
+.certFooter{position:absolute;bottom:36px;left:36px;right:36px;display:flex;justify-content:space-between;align-items:center}
+.sigline{height:1px;width:160px;background:#06232d;margin-bottom:6px}
+.sigtext{font-weight:700;color:#06232d}
+
+/* responsive */
+@media (max-width:860px){
+  .hero{flex-direction:column}
+  .hero-right{width:100%}
+  .row{grid-template-columns:1fr 160px}
+}
