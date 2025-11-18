@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptonic Area - CTF Certificate Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cryptonic Area — CTF Certificate Portal</h1>
+        <p>Download your certificates & verify certificate IDs</p>
+    </header>
+
+    <section class="verify-box">
+        <h2>Verify Certificate ID</h2>
+        <input type="text" id="certInput" placeholder="Enter Certificate ID">
+        <button onclick="checkCert()">Verify Now</button>
+        <p id="verifyResult"></p>
+    </section>
+
+    <section class="list-section">
+        <h2>Participants Certificate List</h2>
+        <div id="certList"></div>
+    </section>
+
+    <footer>
+        <p>© 2025 Cryptonic Area</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="verify.js"></script>
+
+</body>
+</html>
